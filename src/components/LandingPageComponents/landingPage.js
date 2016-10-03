@@ -25,7 +25,7 @@ class LandingPage extends Component {
           <img src={card.authorAvatar} alt={card.title} title={card.title}/>
         </section>
         <section id="cardInfo" className="flexContainerColumn">
-          <h3>{card.author }<span>{this.handleNodeString(card.nodeTypeString)}</span></h3>
+          <h3>{card.author }<span className="">{this.handleNodeString(card.nodeTypeString)}</span></h3>
           <h2>{card.title}</h2>
         </section>
       </article>
@@ -35,9 +35,11 @@ class LandingPage extends Component {
   render() {
     const { recentActivity } = this.props;
     return (
-      <main className="flexContainerColumn centerContainer"> 
-        <h1>Activity</h1>
-        { recentActivity.map(card => this.handleCard(card)) }
+      <main id="mainContent" className="flexContainerColumn centerContainer"> 
+        <h1 className="sectionTitle">Activity</h1>
+        <section id="feedContainer" className="flexContainerColumn">
+          { recentActivity.map(card => this.handleCard(card)) }
+        </section>
       </main>
     );
   }
