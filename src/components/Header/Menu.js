@@ -6,10 +6,10 @@ class Menu extends Component {
   render() {
     return (
       <nav className="menu"> 
-        <div className="dropdown menu"> 
+         <div className="dropdown menu"> 
           <button className="dropbtn dropdown menu">Menu</button>
           <div className="dropdown-content">
-            <a value="action" onClick={ () => this.selectedItem('action')}>action</a>
+            <a href="#">action</a>
           </div>
         </div>
       </nav>
