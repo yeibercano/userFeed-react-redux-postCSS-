@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <section className="appContainer">
         <Header />
-        <main className="mainConentWrapper">
+        <main className="mainContentWrapper">
           {this.props.children}
         </main>
         <Footer />
