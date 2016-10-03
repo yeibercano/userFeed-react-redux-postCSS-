@@ -3,7 +3,6 @@ footer{
   height:25px;
 }
 .footerText {
-  color: $white;
   font-size: $small;
 }
 .footerBackground {
