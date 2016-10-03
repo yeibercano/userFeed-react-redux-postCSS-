@@ -5,7 +5,7 @@ const Footer = () => {
 
   return (
     <footer className="footerBackground"> 
-      <h3 className='footerText'>User Feed &copy; { date } &nbsp; | &nbsp;</h3>
+      <h3 className='footerText'>BRAND &copy; { date } &nbsp; | &nbsp;</h3>
       <h3 className='footerText'><a href="#"> github project</a></h3>
     </footer>
   );
