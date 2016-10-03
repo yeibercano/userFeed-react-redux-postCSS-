@@ -1,0 +1,10 @@
+.avatarFeed {
+	border-radius: 20px;
+  border: 1px solid gray;
+}
+
+.sectionTitle {
+	padding: .7em 0;
+	font-size: responsive 12px 35px;
+	text-align: center;
+}
