@@ -8,11 +8,26 @@ class LandingPage extends Component {
     this.props.getFeed()
   }
 
-  handleMessage(message) {
+  handleNodeString(type) {
+    if (type === "Reply") {
+      return `replied on the idea`
+    } else if (type === "Idea") {
+      return `posted an idea`
+    } else if (type === "Comment") {
+      return `commented on the idea`
+    }
+  }
+
+  handleCard(card) {
     return (
-      <article key={message.nodeid} className="message">
-        <h2>{message.title}</h2>
-        <img src={message.authorAvatar} alt={message.title} title={message.title}/>
+      <article key={card.nodeid} className="flexContainerRow">
+        <section id="cardImage">
+          <img src={card.authorAvatar} alt={card.title} title={card.title}/>
+        </section>
+        <section id="cardInfo" className="flexContainerColumn">
+          <h3>{card.author }<span>{this.handleNodeString(card.nodeTypeString)}</span></h3>
+          <h2>{card.title}</h2>
+        </section>
       </article>
     )
   }
@@ -20,9 +35,9 @@ class LandingPage extends Component {
   render() {
     const { recentActivity } = this.props;
     return (
-      <main className="flexContainerRow"> 
+      <main className="flexContainerColumn centerContainer"> 
         <h1>Activity</h1>
-        { recentActivity.map(message => this.handleMessage(message)) }
+        { recentActivity.map(card => this.handleCard(card)) }
       </main>
     );
   }
