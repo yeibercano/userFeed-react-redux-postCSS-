@@ -4,16 +4,20 @@ html {
   font-range: 420px 1280px;
 }
 
-body{
+/*body{
   background-color: gray;
-  /*background: -webkit-radial-gradient(center, ellipse cover, #2c2e3d 0%,#000000 100%);*/
+  background: -webkit-radial-gradient(center, ellipse cover, #2c2e3d 0%,#000000 100%);
   font-family: 'Playfair Display', serif;
 }
-
+*/
 .appContainer {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+}
+
+.mainContentWrapper {
+  flex: 1;
 }
 
 .centerContainer {
