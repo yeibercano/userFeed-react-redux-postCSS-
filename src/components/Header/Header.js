@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Brand from './Brand'
+import Menu from './Menu'
 
 class Header extends Component {
  
@@ -9,6 +10,7 @@ class Header extends Component {
       <header className="headerBackground">
         <div className="headerWrapper">
           <Brand />
+          <Menu />
         </div> 
       </header>
     )
