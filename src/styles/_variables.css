@@ -1,11 +1,10 @@
-
+@import url(https://fonts.googleapis.com/css?family=Raleway:600,900italic);
 /* Colors */
 $mainColor: rebeccaPurple;
-$offBlue: #71a7dd;
-$white: white;
-$offWhite: color(white lightness(60%));
+$offWhite: color(white lightness(70%));
 
 /* fonts */
 $brandFont: bebas-neue, sans-serif;
 $small: .8em;
 $fontHeading: 1.5em;
+
