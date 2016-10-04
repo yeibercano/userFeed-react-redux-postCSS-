@@ -4,12 +4,6 @@ html {
   font-range: 420px 1280px;
 }
 
-/*body{
-  background-color: gray;
-  background: -webkit-radial-gradient(center, ellipse cover, #2c2e3d 0%,#000000 100%);
-  font-family: 'Playfair Display', serif;
-}
-*/
 .appContainer {
 	display: flex;
 	flex-direction: column;
@@ -39,7 +33,6 @@ html {
 .flexContainerColumn {
   display: flex;
   flex-direction: column;
-  /*justify-content: space-between;*/
 }
 
 .containerHeader {
@@ -53,7 +46,7 @@ html {
 }
 
 .imagesFilter {
-  filter: grayscale(.6);
+  filter: grayscale(.2);
   &:hover {
     filter: grayscale(0);
   }
