@@ -6,11 +6,11 @@ class Menu extends Component {
   render() {
     return (
       <nav className="menu"> 
-         <div className="dropdown menu"> 
-          <button className="dropbtn dropdown menu">Menu</button>
-          <div className="dropdown-content">
-            <a href="#">action</a>
-          </div>
+         <div className="dropdown"> 
+          <button className="dropbtn">&#9776;</button>
+            <div className="dropdown-content">
+              <a href="#">action</a>
+            </div>
         </div>
       </nav>
     );
