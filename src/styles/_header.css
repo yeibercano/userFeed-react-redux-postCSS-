@@ -35,49 +35,47 @@ nav a:hover {
   letter-spacing: 2px;
   padding-top: 8px;
 }
-.menu {
-  flex-grow: 12;
-}
 
 .headerBackground {
   background-color: $mainColor;
 }
+
 /* MENU DROPDOWN */
 /* Dropdown Button */
 .dropbtn {
   background-color: $mainColor;
-  color: $white;
-  padding: 16px;
-  font-size: 16px;
+  color: white;
+  padding: 0 .5em .15em;
+  font-size: 1.5em;
   border: none;
   cursor: pointer;
 }
+
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  padding-left: 20px;
-  text-transform: uppercase !important;
-  line-height: 1.6;
+  position: relative;
 }
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 2;
   border-radius: 5px;
+  right: 0px;
 }
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: $offBlue;
+  background-color: #208D30;
 }
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -85,8 +83,5 @@ nav a:hover {
 }
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: $offBlue;
-}
-.showBlock:hover {
-  background-color: $offBlue;
+  background-color: $mainColor;
 }
