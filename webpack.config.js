@@ -52,7 +52,7 @@ const config = {
         // include: __dirname + '/src/styles'
       },
       {
-        test: /\.(jpg|png|gif)$/,
+        test: /\.(gif|jpg|png)$/,
         loader: 'file?hash=sha512&digest=hex&name=[hash].[ext]!image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false',
         include: PATHS.images
       }
