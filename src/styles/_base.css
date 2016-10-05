@@ -3,6 +3,7 @@ html {
   font-size: responsive 12px 21px;
   font-range: 420px 1280px;
 }
+
 /* ALL CONTAINERS */
 .appContainer {
 	display: flex;
@@ -10,8 +11,9 @@ html {
 	min-height: 100vh;
 }
 
+/* ocupies a available space between elements inside parent flex container */
 .mainContentWrapper {
-  flex: 1;
+  flex: 1; 
 }
 
 .centerContainer {
@@ -55,10 +57,10 @@ html {
 
 /* 'a' TAGS*/
 a {
-  color: rebeccaPurple;
+  color: $mainColor;
   text-decoration: none;
 
   &:hover {
-    color: #208D30;
+    color: $secColor;
   }
 }
