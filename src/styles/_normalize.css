@@ -51,11 +51,6 @@ table {
 }
 
 a {
-  color: rebeccaPurple;
   text-decoration: none;
-
-  &:hover {
-    color: #208D30;
-  }
 }
 

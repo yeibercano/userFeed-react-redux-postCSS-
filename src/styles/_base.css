@@ -3,7 +3,7 @@ html {
   font-size: responsive 12px 21px;
   font-range: 420px 1280px;
 }
-
+/* ALL CONTAINERS */
 .appContainer {
 	display: flex;
 	flex-direction: column;
@@ -45,9 +45,20 @@ html {
   text-transform: lowercase;
 }
 
+/* IMAGES FILTER */
 .imagesFilter {
   filter: grayscale(.2);
   &:hover {
     filter: grayscale(0);
+  }
+}
+
+/* 'a' TAGS*/
+a {
+  color: rebeccaPurple;
+  text-decoration: none;
+
+  &:hover {
+    color: #208D30;
   }
 }
