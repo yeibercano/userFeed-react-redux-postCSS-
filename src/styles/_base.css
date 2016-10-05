@@ -5,7 +5,7 @@
 	min-height: 100vh;
 }
 
-/* ocupies a available space between elements inside parent flex container */
+/* occupies a available space between elements inside parent flex container */
 .mainContentWrapper {
   flex: 1; 
 }
@@ -29,16 +29,6 @@
 .flexContainerColumn {
   display: flex;
   flex-direction: column;
-}
-
-.containerHeader {
-  border-bottom: 1px solid $white;
-  border-top: 10px solid $white;
-  padding: 20px 0px;
-  font-size: $fontHeading;
-  color: $white;
-  text-align: center;
-  text-transform: lowercase;
 }
 
 /* IMAGES FILTER */
