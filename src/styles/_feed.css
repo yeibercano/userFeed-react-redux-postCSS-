@@ -1,13 +1,3 @@
-.avatarFeed {
-	border-radius: 20px;
-  border: 1px solid lightgray;
-}
-
-.feedStatusType {
-	color: $offWhite;
-	padding-left: .5em
-}
-
 .sectionTitle {
 	padding: .7em 0;
 	font-size: responsive 12px 20px;
@@ -21,24 +11,47 @@
   border: 1px solid lightgray;
 }
 
+.titleContainer {
+	align-items: center;
+	background-color: $mainColor;
+}
+
+.lessThan {
+	color: white;
+	padding: 0 .5em;
+	font-size: 25px;
+  font-weight: 400;
+}
+
 .messageContainer {
   margin-left: 20px;
   border-bottom: 1px solid lightgray;
   display: flex;
   padding-right: 20px;
 }
-.author {
-	font-size: $small;
-}
 
 #cardImage {
 	padding: 0.5em 0.5em 0 0;
+}
+
+.avatarFeed {
+	border-radius: 20px;
+  border: 1px solid lightgray;
 }
 
 #cardInfo {
 	justify-content: center;
 	line-height: 1.3em;
 	padding: .5em 0;
+}
+
+.author {
+	font-size: $small;
+}
+
+.feedStatusType {
+	color: $offWhite;
+	padding-left: .5em
 }
 
 .timeAgo {
@@ -49,14 +62,4 @@
 	font-weight: 400;
 }
 
-.lessThan {
-	color: white;
-	padding: 0 .5em;
-	font-size: 25px;
-  font-weight: 400;
-}
 
-.titleContainer {
-	align-items: center;
-	background-color: $mainColor;
-}
