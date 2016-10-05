@@ -1,7 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:600,900italic);
 
 /* FONTS: ; */
-$brandFont: bebas-neue, sans-serif;
+$mainFont: 'Raleway', sans-serif; 
+$mainFontHeavy: 600;
+$mainFontNormal: 400;
+
 $small: .8em;
 $fontHeading: 1.5em;
 
