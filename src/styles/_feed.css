@@ -58,8 +58,7 @@
 	color: $offWhite;
 	font-size: $small;
 	font-style: italic;
-	font-family: "Raleway";
-	font-weight: 400;
+	font-family: $secondFont;
 }
 
 
