@@ -24,10 +24,18 @@ class LandingPage extends Component {
     return (
       <article key={card.nodeid} className="messageContainer">
         <section id="cardImage">
-          <img className="avatarFeed imagesFilter" src={card.authorAvatar} alt={card.title} title={card.title}/>
+          <img className="avatarFeed imagesFilter" 
+               src={`../..${card.authorAvatar}`} 
+               alt={card.title} 
+               title={card.title} />
         </section>
         <section id="cardInfo" className="flexContainerColumn">
-          <h3 className="author">{card.author }<span className="feedStatusType">{this.handleNodeString(card.nodeTypeString)}</span></h3>
+          <h3 className="author">
+            {card.author}
+            <span className="feedStatusType">
+              {this.handleNodeString(card.nodeTypeString)}
+            </span>
+          </h3>
           <h3>{card.title}</h3>
           <TimeAgo date={card.postDate} className="timeAgo" />
         </section>
