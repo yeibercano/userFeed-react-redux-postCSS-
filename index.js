@@ -8,7 +8,6 @@ import createLogger from 'redux-logger';
 
 import App from './src/components/App'
 import LandingPage from './src/components/LandingPageComponents/landingPage'
-import Footer from './src/components/Footer/Footer'
 
 import reducers from './src/reducers/index'
 

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Footer from './Footer/Footer'
 import Header from './Header/Header'
 import LandingPage from './LandingPageComponents/landingPage'
 
@@ -10,7 +9,6 @@ class App extends Component {
         <div className="mainContentWrapper">
           {this.props.children}
         </div>
-        <Footer />
       </section>
     );
   }
