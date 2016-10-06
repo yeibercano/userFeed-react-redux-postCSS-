@@ -3,7 +3,6 @@ var path = require('path');
 var httpProxy = require('http-proxy');
 var publicPath = path.resolve(__dirname, 'src');
 var fs = require('fs');
-var bodyParser = require('body-parser');
 var morgan = require('morgan')
 
 // We need to add a configuration to our proxy server,
@@ -16,10 +15,9 @@ var proxy = httpProxy.createProxyServer({
 });
 var app = express();
 
+//MIDDLEWARES
 app.use(express.static(publicPath));
-
-// use morgan to log requests to the console
-app.use(morgan('dev'));
+app.use(morgan('dev')); // use morgan to log requests to the console
 
 // serve data.json
 var data = path.resolve(__dirname, 'src', 'data', 'data.json') 
@@ -29,8 +27,6 @@ app.get('/feed', function(req, res) {
     res.send(data); 
   });
 });
-
-
 
 /*
 ================================================================================================
