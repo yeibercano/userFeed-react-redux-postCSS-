@@ -47,6 +47,7 @@
     "precss": "^1.4.0",
     "rucksack-css": "^0.8.6",
     "style-loader": "^0.13.1",
+    "stylelint": "^7.3.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.9.11",
     "webpack-dev-middleware": "^1.2.0",

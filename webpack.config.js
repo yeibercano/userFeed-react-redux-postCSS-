@@ -11,6 +11,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const postcssImport = require('postcss-import'),
       precss = require('precss'),
       cssnext = require('postcss-cssnext'),
+      stylelint= require('stylelint'),
       rucksack = require('rucksack-css');
 
 const PATHS = {
@@ -65,7 +66,8 @@ const config = {
       }),
       precss,
       rucksack,
-      cssnext
+      cssnext,
+      stylelint
     ];
   },
   //Since we're running Webpack from our server, need to manually add the
