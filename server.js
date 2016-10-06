@@ -5,7 +5,6 @@ var publicPath = path.resolve(__dirname, 'src');
 var fs = require('fs');
 var bodyParser = require('body-parser');
 var morgan = require('morgan')
-// var favicon = require('serve-favicon');
 
 // We need to add a configuration to our proxy server,
 // as we are now proxying outside localhost
@@ -17,9 +16,6 @@ var proxy = httpProxy.createProxyServer({
 });
 var app = express();
 
-// app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-app.use(bodyParser.json());
-app.use(bodyParser({limit: '50mb'}));
 app.use(express.static(publicPath));
 
 // use morgan to log requests to the console
