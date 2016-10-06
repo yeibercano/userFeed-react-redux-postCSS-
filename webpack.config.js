@@ -11,7 +11,6 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const postcssImport = require('postcss-import'),
       precss = require('precss'),
       cssnext = require('postcss-cssnext'),
-      stylelint= require('stylelint'),
       rucksack = require('rucksack-css');
 
 const PATHS = {
@@ -67,14 +66,13 @@ const config = {
       precss,
       rucksack,
       cssnext,
-      stylelint
     ];
   },
   //Since we're running Webpack from our server, need to manually add the
   //Hot Replacement plugin
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new ExtractTextPlugin('main.css')
+    new ExtractTextPlugin('main.css'),
 
   ]
 };
