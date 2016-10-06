@@ -25,7 +25,7 @@ class LandingPage extends Component {
       <article key={card.nodeid} className="messageContainer">
         <section id="cardImage">
           <img className="avatarFeed imagesFilter" 
-               src={`../..${card.authorAvatar}`} 
+               src={card.authorAvatar} 
                alt={card.title} 
                title={card.title} />
         </section>
