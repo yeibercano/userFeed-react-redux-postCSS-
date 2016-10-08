@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Header from './Header/Header'
 import LandingPage from './LandingPageComponents/landingPage'
 
 class App extends Component {
