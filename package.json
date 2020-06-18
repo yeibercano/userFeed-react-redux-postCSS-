@@ -1,7 +1,4 @@
 {
-  "engines": {
-    "node": "5.10.0"
-  },
   "main": "server.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot",
